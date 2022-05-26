@@ -30,10 +30,10 @@
       <div class="collapse navbar-collapse ml-5" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
           </li>        
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="{% url 'services' %}" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Services
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -47,16 +47,16 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Repertoire</a>
+            <a class="nav-link" href="{% url 'repertoire' %}">Repertoire</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Testimonials</a>
+            <a class="nav-link" href="{% url 'testimonials' %}">Testimonials</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Bio</a>
+            <a class="nav-link" href="{% url 'bio' %}">Bio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="{% url 'contact' %}">Contact</a>
           </li>
         </ul>
       </div>
