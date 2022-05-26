@@ -1,0 +1,74 @@
+<div class="container-fluid navbar sticky-top navbar-expand-md">
+    <div class="row w-100 navbar-row">
+        <div class="col-6"><h2 id="navbar-logo"><strong>NINA</strong> WEDDING SINGER</h2></div>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>                
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="col-md-6 d-md-flex justify-content-md-end">
+            <ul class="navbar-nav mobile-nav d-md-flex ">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="{% url 'home' %}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Home
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">About</a>
+                  <a class="dropdown-item" href="#">Media</a>
+                  <a class="dropdown-item" href="#">Contact</a>               
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Services
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Wedding Receptions</a>
+                  <a class="dropdown-item" href="#">Ceremonies</a>
+                  <a class="dropdown-item" href="#">Hen Parties</a>
+                  <a class="dropdown-item" href="#">Your Song</a> 
+                  <a class="dropdown-item" href="#">Audio Recordings</a>
+                  <a class="dropdown-item" href="#">Kids Entertainment</a>
+                  <a class="dropdown-item" href="#">DJing</a>            
+                </div>
+              </li>        
+              {% if request.user.is_superuser %}
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Repertoire</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Add to Repertoire</a>
+                  <a class="dropdown-item" href="#">Edit Repertoire</a>        
+                </div>
+              </li>
+              {% else %}
+              <li class="nav-item">
+                  <a href="#" class="nav-link">Repertoire</a>
+              </li> 
+              {% endif %}
+              <li class="nav-item">
+                  <a href="#" class="nav-link">Testimonials</a>
+              </li> 
+              <!-- {% if request.user.is_authenticated %}
+              <li class="nav-item">
+                <a href="{% url 'account_logout' %}" class="nav-link">Logout</a>
+              </li>          
+              {% else %}
+              <li class="nav-item">
+                <a href="{% url 'account_login' %}" class="nav-link">*</a>
+              </li>        
+              <li class="nav-item d-none">
+                <a class="nav-link" href="{% url 'account_signup' %}">Sign Up</a>
+              </li>
+              {% endif %} -->
+            </ul>
+            <!-- {% if request.user.is_authenticated %}        
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item pr-2">
+                  Logged in as {{ request.user.username}}
+                </li>
+              </ul>   
+              {% endif %} -->
+          </div>
+        </div>
+    </div>
+</div>
