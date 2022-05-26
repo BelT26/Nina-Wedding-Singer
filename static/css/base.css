@@ -13,17 +13,40 @@ body {
     height: 6rem;    
 }
 
-/* .navbar h2,
-.nav-link,
+.navbar h2,
 .navbar-toggler-icon,
 .navbar-toggler {
     color: rgb(220, 198, 125) !important;
-} */
+}
+
+.navbar h2 {
+    font-size: 2rem;
+}
+
+.nav-link {
+    color: rgb(220, 198, 125) !important;
+}
 
 .nav-link:active,
 .nav-link:hover {
     color: rgb(220, 198, 125);
     font-weight: 700;
+}
+
+footer {
+    background-color: rgb(76, 73, 79);
+    color: rgb(220, 198, 125) !important;
+    height: 6rem; 
+}
+
+footer li {
+    display: inline-block;
+    list-style: none;
+}
+
+footer i {
+    color: rgb(220, 198, 125);
+    font-size: 2rem;
 }
 
 
