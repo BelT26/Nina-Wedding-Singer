@@ -3,5 +3,92 @@
 
 
 {% block content %}
-<h1 class="'display-4">Services</h1>
+<div id="packages" class="service">
+    <div class="row">
+        <div class="col">
+            <h1 class="display-2 text-center mb-3">Packages</h1>
+        </div>
+    </div>   
+    <div class="row d-flex flex-row">        
+        <div class="col-12 col-lg-4 package" id="ceremonies">
+            <div class="row">
+                <div class="col">
+                    <h2 class="text-center"><strong>CEREMONIES</strong></h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col service-img">
+                    <img src="{% static 'home/images/ceremony.jpg' %}" id="ceremony-pic"/>
+                </div>                
+            </div>
+            <div class="row">
+                <div class="col service-text">
+                    <h5>Includes</h5>
+                    <ul>                        
+                        <li>Live music, with vocals, acoustic guitar and backing tracks, for up to half an hour while your guests are being seated</li>
+                        <li>4 songs performed live during the ceremony itself – 1 for the processional, 2 for the signing of the register and 1 for the recessional</li>
+                        <li>Ultra compact sound system (option of full battery power if location does not have electricity supply)</li>
+                        <li>This type of live music is available even at venues where live music outdoors is restricted</li>
+                        <li>Price starts at £250, less if combined with another part of the day</li>
+                    </ul>
+                    <p>Songs are the perfect expression of love.  They stir emotions and say what mere words can't.  There are countless songs - dramatic, tender and heartfelt that, in the hands of the right singer, can move a captive audience to tears.  Nina is such a singer.  She has sung at hundreds of weddings and has never failed to impress with her lovely voice and moving performances. </p>
+                    <p>Nina helps create the perfect mood by singing and playing as your guests arrive and are seated.  Choose your own selection of songs for walking down the aisle, whilst signing the register and then leaving as a married couple.</p>
+                    <p>A singer for your marriage ceremony is a great, fresh idea that replaces the impersonal and formal nature of a standard wedding service with a more intimate, personal and unique experience that will get your guests’ hearts fluttering and that you will remember for years to come.…</p>
+                </div>
+            </div>            
+        </div>
+        <div class="col-12 col-lg-4 package" id="reception">
+            <div class="row">
+                <div class="col">
+                    <h2 class="text-center"><strong>DRINKS</strong> RECEPTIONS</h2>
+                    <h2 class="text-center"><strong>WEDDING</strong> BREAKFASTS</h2>
+                    <h2 class="text-center mb-3"><strong>PRE-EVENING</strong> RECEPTIONS</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col service-text">
+                    <h5>Includes</h5>
+                    <ul>                        
+                        <li>Live music, live lounge style - feel good, toe tapping repertoire - with vocals, acoustic guitar and backing tracks, for up to an hour and a half</li>
+                        <li>Compact sound system </li>
+                        <li>Price starts at £250, less if combined with another part of the day</li>
+                    </ul>
+                    <p>You may also like some live singing during the drinks reception, just after your wedding service. This is an ideal time for people to chat and catch up and for photographers to take their group photos and some background music helps create a relaxed, romantic atmosphere. Nina has a great repertoire of acoustic, jazz and lounge songs, perfect to set the mood.</p>
+                    <p>You may alternatively, or additionally opt for live music during the wedding breakfast or indeed the time between the meal and the evening reception party, perhaps kicking the evening off with the first dance sung live - the possibilities are numerous.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col service-img">
+                    <img src="{% static 'home/images/nina_guitar.jpg' %}" id="ceremony-pic"/>
+                </div>                
+            </div>           
+        </div>
+        <div class="col-12 col-lg-4 package" id="evening">
+            <div class="row">
+                <div class="col">
+                    <h2 class="text-center"><strong>EVENING </strong> RECEPTIONS</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col service-img">
+                    <img src="{% static 'home/images/party.jpg' %}" id="ceremony-pic"/>
+                </div>                
+            </div>
+            <div class="row">
+                <div class="col service-text">
+                    <p>Nina's show is completely self contained, she is a one woman band. She works with the highest quality backing tracks and has a superb selection of songs that you will love, whether you're 5 or 95, moving between pop, Motown, soul, dance, disco, rock, indie etc with ease and energy!  She is very adept at reading a crowd and playing the right blend of music to get everyone up on their feet.</p>
+                    <h5>Includes</h5>
+                    <ul> 
+                        <li>3 sets of 40 minutes of dance floor filling live music</li>
+                        <li>First dance sung live, a big send off on the dance floor before the end of the night</li>
+                        <li>DJ’ing between live sets</li>
+                        <li>Full high quality lighting and sound system</li>
+                        <li>Arrival at least an hour before start time</li>
+                        <li>Price starts at £500 based on a wedding reception from 7:30pm till midnight, less if combined with another part of the day</li>
+                    </ul>                    
+                </div>
+            </div>            
+        </div>
+    </div>
+</div>
 {% endblock %}

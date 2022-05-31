@@ -30,11 +30,11 @@ def testimonials(request):
     return render(request, 'home/testimonials.html')
 
 
-def bio(request):
+def faqs(request):
     """
     returns the home page
     """
-    return render(request, 'home/bio.html')
+    return render(request, 'home/faqs.html')
 
 
 def contact(request):

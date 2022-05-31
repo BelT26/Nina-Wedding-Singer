@@ -54,6 +54,35 @@ footer i {
     width: 100vw;
 }
 
+.service-img {
+    padding: 1rem;
+}
+
+.service-img img {
+    height: 300px;
+}
+
+#ceremony-pic {
+    height: 450px;
+}
+
+#disco-pic {
+    height: 200px;
+}
+
+.service-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-even {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    background-color: rgba(220, 218, 221, 0.8);
+}
+
+
 
 /* media queries */
 @media screen and (max-width: 767px) {

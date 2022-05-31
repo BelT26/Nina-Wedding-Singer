@@ -1,4 +1,5 @@
 {% load static %}
+{% load custom_tags %}
 <!doctype html>
 <html lang="en">
   <head>
@@ -7,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Wedding Singer Reigate">
-    <meta name="keywords" content="wedding singer reigate">
+    <meta name="keywords" content="singer, wedding, surrey, acoustic, vocalist, kent, west east sussex, book, ceremony, reception, live music, evening reception">
     <meta name="author" content="Helen Taylor">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
@@ -31,29 +32,32 @@
         <ul class="navbar-nav">
           <li class="nav-item active">
             <a class="nav-link" href="{% url 'home' %}">Home</a>
-          </li>        
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="{% url 'services' %}" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Services
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">Receptions</a>
-              <a class="dropdown-item" href="#">Ceremonies</a>
-              <a class="dropdown-item" href="#">Hen Parties</a>
-              <a class="dropdown-item" href="#">Your Song</a>
-              <a class="dropdown-item" href="#">Audio Recordings</a>
-              <a class="dropdown-item" href="#">Kids' Entertainment</a>
-              <a class="dropdown-item" href="#">DJing</a>
-            </div>
           </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'services' %}">Packages</a>
+          </li>        
+          <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="{% url 'services' %}" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Packages
+            </a> -->
+            <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="{% anchor 'services' 'receptions' %}">Receptions</a>
+              <a class="dropdown-item" href="{% anchor 'services' 'ceremonies' %}">Ceremonies</a>
+              <a class="dropdown-item" href="{% anchor 'services' 'hen' %}">Hen Parties</a>
+              <a class="dropdown-item" href="{% anchor 'services' 'song' %}">Your Song</a>
+              <a class="dropdown-item" href="{% anchor 'services' 'audio' %}">Audio Recordings</a>
+              <a class="dropdown-item" href="{% anchor 'services' 'kids' %}">Kids' Entertainment</a>
+              <a class="dropdown-item" href="{% anchor 'services' 'djing' %}">DJing</a>
+            </div> -->
+          <!-- </li>
           <li class="nav-item">
             <a class="nav-link" href="{% url 'repertoire' %}">Repertoire</a>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a class="nav-link" href="{% url 'testimonials' %}">Testimonials</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'bio' %}">Bio</a>
+            <a class="nav-link" href="{% url 'faqs' %}">FAQs</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{% url 'contact' %}">Contact</a>
