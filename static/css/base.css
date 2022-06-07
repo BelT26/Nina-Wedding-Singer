@@ -24,6 +24,7 @@ body {
 }
 
 .nav-link {
+    
     color: rgb(220, 198, 125) !important;
 }
 
@@ -33,20 +34,29 @@ body {
     font-weight: 700;
 }
 
-footer {
+.heading-font {
+    color: rgb(76, 73, 79);
+}
+
+.main-heading {
+    font-size: 3rem;
+}
+
+.main-footer {
     background-color: rgb(76, 73, 79);
     color: rgb(220, 198, 125) !important;
     height: 6rem; 
 }
 
-footer li {
+.main-footer li {
     display: inline-block;
     list-style: none;
 }
 
-footer i {
+.main-footer i {
     color: rgb(220, 198, 125);
     font-size: 2rem;
+    padding-top: 20px;
 }
 
 
@@ -54,20 +64,34 @@ footer i {
     width: 100vw;
 }
 
-.service-img {
-    padding: 1rem;
+#main-header-container {
+    background-color: rgb(76, 73, 79);
+    opacity: 0.85;
+    color: aliceblue;
+    position: relative;
+    top: -12rem;
+    float:left;
+    margin-left: 2rem;
+    margin-bottom: -4rem;
+    padding: 0.25rem 0.5rem;
+    z-index: 99;
 }
 
-.service-img img {
-    height: 300px;
+#home-page-img2 {
+    height: 400px;
+    margin: auto;
+}
+
+#reception-pic {
+    height: 430px;
 }
 
 #ceremony-pic {
-    height: 450px;
+    height: 360px;
 }
 
-#disco-pic {
-    height: 200px;
+#party-pic {
+    height: 370px;
 }
 
 .service-img {
@@ -76,9 +100,8 @@ footer i {
     align-items: center;
 }
 
-.service-even {
-    margin-left: 0px !important;
-    margin-right: 0px !important;
+.packages-container {
+    margin: 0px !important;
     background-color: rgba(220, 218, 221, 0.8);
 }
 

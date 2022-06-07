@@ -1,3 +1,54 @@
 from django.db import models
 
+
 # Create your models here.
+class Song(models.Model):
+    """
+    A model used to add new songs
+    """
+    NOUGHTIES = '00'
+    NINETIES = '90'
+    EIGHTIES = '80'
+    SEVENTIES = '70'
+    SIXTIES = '60'
+    OTHER = 'OT'
+    EVENING = 'EV'
+    CEREMONY = 'CE'
+
+    GENRE_CHOICES = [
+        (NOUGHTIES, '00s - 10s'),
+        (NINETIES, '90s'),
+        (EIGHTIES, '80s'),
+        (SEVENTIES, '70s'),
+        (SIXTIES, '60s'),
+        (OTHER, 'Other')
+    ]
+
+    PLAYLIST_CHOICES = [
+       (CEREMONY, 'Ceremony'),
+       (EVENING, 'Evening')
+    ]
+
+    title = models.CharField(max_length=300, blank=False, null=False)
+    artist = models.CharField(max_length=300, blank=False, null=False)
+    genre = models.CharField(max_length=50, choices=GENRE_CHOICES,
+                             default=OTHER),
+    playlist = models.CharField(max_length=50, choices=PLAYLIST_CHOICES,
+                                default=EVENING)
+
+    def __str__(self):
+        return f'{self.title}'
+
+
+class Testimonial(models.Model):
+    """
+    A model used to add testimonials
+    """
+    title = models.CharField(max_length=300, blank=False, null=False)
+    paragraph1 = models.TextField()
+    paragraph2 = models.TextField()
+    paragraph3 = models.TextField()
+    paragraph4 = models.TextField()
+    paragraph5 = models.TextField()
+    author = models.CharField(max_length=200, blank=True, null=True)
+    date = models.CharField(max_length=100, blank=True, null=True)

@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Song
 
 
 # Create your views here.
@@ -13,15 +14,19 @@ def services(request):
     """
     returns the services page
     """
-    return render(request, 'home/services.html')
+    songs = Song.objects.all()
+    return render(request, 'home/services.html', {
+        'songs': songs})
 
 
 def repertoire(request):
     """
-    returns the repertoire page
+    returns the services page
     """
-    return render(request, 'home/repertoire.html')
 
+    songs = Song.objects.all()
+    return render(request, 'home/services.html', {
+        songs: songs })
 
 def testimonials(request):
     """

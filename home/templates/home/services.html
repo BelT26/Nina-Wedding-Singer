@@ -3,92 +3,237 @@
 
 
 {% block content %}
-<div id="packages" class="service">
+<div id="packages" class="container">
     <div class="row">
         <div class="col">
-            <h1 class="display-2 text-center mb-3">Packages</h1>
+            <h1 class="text-center my-3 heading-font main-heading">PACKAGES</h1>
         </div>
-    </div>   
-    <div class="row d-flex flex-row">        
-        <div class="col-12 col-lg-4 package" id="ceremonies">
-            <div class="row">
-                <div class="col">
-                    <h2 class="text-center"><strong>CEREMONIES</strong></h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col service-img">
-                    <img src="{% static 'home/images/ceremony.jpg' %}" id="ceremony-pic"/>
-                </div>                
-            </div>
-            <div class="row">
-                <div class="col service-text">
-                    <h5>Includes</h5>
-                    <ul>                        
-                        <li>Live music, with vocals, acoustic guitar and backing tracks, for up to half an hour while your guests are being seated</li>
-                        <li>4 songs performed live during the ceremony itself – 1 for the processional, 2 for the signing of the register and 1 for the recessional</li>
-                        <li>Ultra compact sound system (option of full battery power if location does not have electricity supply)</li>
-                        <li>This type of live music is available even at venues where live music outdoors is restricted</li>
-                        <li>Price starts at £250, less if combined with another part of the day</li>
-                    </ul>
-                    <p>Songs are the perfect expression of love.  They stir emotions and say what mere words can't.  There are countless songs - dramatic, tender and heartfelt that, in the hands of the right singer, can move a captive audience to tears.  Nina is such a singer.  She has sung at hundreds of weddings and has never failed to impress with her lovely voice and moving performances. </p>
-                    <p>Nina helps create the perfect mood by singing and playing as your guests arrive and are seated.  Choose your own selection of songs for walking down the aisle, whilst signing the register and then leaving as a married couple.</p>
-                    <p>A singer for your marriage ceremony is a great, fresh idea that replaces the impersonal and formal nature of a standard wedding service with a more intimate, personal and unique experience that will get your guests’ hearts fluttering and that you will remember for years to come.…</p>
-                </div>
-            </div>            
-        </div>
-        <div class="col-12 col-lg-4 package" id="reception">
-            <div class="row">
-                <div class="col">
-                    <h2 class="text-center"><strong>DRINKS</strong> RECEPTIONS</h2>
-                    <h2 class="text-center"><strong>WEDDING</strong> BREAKFASTS</h2>
-                    <h2 class="text-center mb-3"><strong>PRE-EVENING</strong> RECEPTIONS</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col service-text">
-                    <h5>Includes</h5>
-                    <ul>                        
-                        <li>Live music, live lounge style - feel good, toe tapping repertoire - with vocals, acoustic guitar and backing tracks, for up to an hour and a half</li>
-                        <li>Compact sound system </li>
-                        <li>Price starts at £250, less if combined with another part of the day</li>
-                    </ul>
-                    <p>You may also like some live singing during the drinks reception, just after your wedding service. This is an ideal time for people to chat and catch up and for photographers to take their group photos and some background music helps create a relaxed, romantic atmosphere. Nina has a great repertoire of acoustic, jazz and lounge songs, perfect to set the mood.</p>
-                    <p>You may alternatively, or additionally opt for live music during the wedding breakfast or indeed the time between the meal and the evening reception party, perhaps kicking the evening off with the first dance sung live - the possibilities are numerous.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col service-img">
-                    <img src="{% static 'home/images/nina_guitar.jpg' %}" id="ceremony-pic"/>
-                </div>                
-            </div>           
-        </div>
-        <div class="col-12 col-lg-4 package" id="evening">
-            <div class="row">
-                <div class="col">
-                    <h2 class="text-center"><strong>EVENING </strong> RECEPTIONS</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col service-img">
-                    <img src="{% static 'home/images/party.jpg' %}" id="ceremony-pic"/>
-                </div>                
-            </div>
-            <div class="row">
-                <div class="col service-text">
-                    <p>Nina's show is completely self contained, she is a one woman band. She works with the highest quality backing tracks and has a superb selection of songs that you will love, whether you're 5 or 95, moving between pop, Motown, soul, dance, disco, rock, indie etc with ease and energy!  She is very adept at reading a crowd and playing the right blend of music to get everyone up on their feet.</p>
-                    <h5>Includes</h5>
-                    <ul> 
-                        <li>3 sets of 40 minutes of dance floor filling live music</li>
-                        <li>First dance sung live, a big send off on the dance floor before the end of the night</li>
-                        <li>DJ’ing between live sets</li>
-                        <li>Full high quality lighting and sound system</li>
-                        <li>Arrival at least an hour before start time</li>
-                        <li>Price starts at £500 based on a wedding reception from 7:30pm till midnight, less if combined with another part of the day</li>
-                    </ul>                    
-                </div>
-            </div>            
+    </div> 
+    <div class="row">
+        <div class="col m-3">
+            <p class="lead">I pride myself on having a really good knowledge of music through the decades and what will work on the dancefloor.  I love to see people having a good time and providing the soundtrack that makes people really enjoy themselves. You are very welcome to make song requests as much as you like, or just leave it to me, whatever works for you.”
+
+                Whenever you choose to have Nina sing/play, she brings a fun yet sophisticated addition to the proceedings.  Her role even borders on the master of ceremonies' - due to her years of wedding experience, she is very aware of the sequence of your big day and can make any necessary announcements, give prompts, provide a radio microphone for speeches if required, as well as fill any musical gaps in your day, for example, playing background music for the wedding breakfast and building up to the evening party and that all important first dance! And then the party really begins!
+                </p>
         </div>
     </div>
+</div>
+    <div class="container-fluid packages-container">
+        <div class="row d-flex flex-row mt-4 ">        
+            <div class="col-12 col-lg-4 package p-3" id="ceremonies">
+                <div class="row">
+                    <div class="col">
+                        <h2 class="text-center heading-font my-3"><strong>CEREMONIES</strong></h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col service-img">
+                        <img src="{% static 'home/images/ceremony.jpg' %}" id="ceremony-pic"/>
+                    </div>                
+                </div>
+                <div class="row">
+                    <div class="col service-text m-3">                    
+                        <p>Songs are the perfect expression of love.  They stir emotions and say what mere words can't.  There are countless songs - dramatic, tender and heartfelt that, in the hands of the right singer, can move a captive audience to tears.  Nina is such a singer.  She has sung at hundreds of weddings and has never failed to impress with her lovely voice and moving performances. </p>
+                        <p>Nina helps create the perfect mood by singing and playing as your guests arrive and are seated.  Choose your own selection of songs for walking down the aisle, whilst signing the register and then leaving as a married couple.</p>
+                        <p>A singer for your marriage ceremony is a great, fresh idea that replaces the impersonal and formal nature of a standard wedding service with a more intimate, personal and unique experience that will get your guests’ hearts fluttering and that you will remember for years to come.…</p>
+                        <h5>Includes</h5>
+                        <ul>                        
+                            <li>Live music, with vocals, acoustic guitar and backing tracks, for up to half an hour while your guests are being seated</li>
+                            <li>4 songs performed live during the ceremony itself – 1 for the processional, 2 for the signing of the register and 1 for the recessional</li>
+                            <li>Ultra compact sound system (option of full battery power if location does not have electricity supply)</li>
+                            <li>This type of live music is available even at venues where live music outdoors is restricted</li>
+                            <li>Price starts at £250, less if combined with another part of the day</li>
+                        </ul>
+                    </div>
+                </div>            
+            </div>
+            <div class="col-12 col-lg-4 package p-3" id="reception">
+                <div class="row">
+                    <div class="col">
+                        <h2 class="text-center mt-5 heading-font"><strong>DRINKS</strong> RECEPTIONS</h2>
+                        <h2 class="text-center heading-font"><strong>WEDDING</strong> BREAKFASTS</h2>
+                        <h2 class="text-center mb-3 heading-font"><strong>PRE-EVENING</strong> RECEPTIONS</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col service-text m-3">
+                        <p>You may also like some live singing during the drinks reception, just after your wedding service. This is an ideal time for people to chat and catch up and for photographers to take their group photos and some background music helps create a relaxed, romantic atmosphere. Nina has a great repertoire of acoustic, jazz and lounge songs, perfect to set the mood.</p>
+                        <p>You may alternatively, or additionally opt for live music during the wedding breakfast or indeed the time between the meal and the evening reception party, perhaps kicking the evening off with the first dance sung live - the possibilities are numerous.</p>
+                        <h5>Includes</h5>
+                        <ul>                        
+                            <li>Live music, live lounge style - feel good, toe tapping repertoire - with vocals, acoustic guitar and backing tracks, for up to an hour and a half</li>
+                            <li>Compact sound system </li>
+                            <li>Price starts at £250, less if combined with another part of the day</li>
+                        </ul>
+                        
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col service-img mt-3">
+                        <img src="{% static 'home/images/nina_guitar.jpg' %}" id="reception-pic"/>
+                    </div>                
+                </div>           
+            </div>
+            <div class="col-12 col-lg-4 package p-3" id="evening">
+                <div class="row">
+                    <div class="col">
+                        <h2 class="text-center heading-font my-3"><strong>EVENING </strong> RECEPTIONS</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col service-img">
+                        <img src="{% static 'home/images/party.jpg' %}" id="party-pic"/>
+                    </div>                
+                </div>
+                <div class="row">
+                    <div class="col service-text m-3">
+                        <p>Nina's show is completely self contained, she is a one woman band. She works with the highest quality backing tracks and has a superb selection of songs that you will love, whether you're 5 or 95, moving between pop, Motown, soul, dance, disco, rock, indie etc with ease and energy!  She is very adept at reading a crowd and playing the right blend of music to get everyone up on their feet.</p>
+                        <h5>Includes</h5>
+                        <ul> 
+                            <li>3 sets of 40 minutes of dance floor filling live music</li>
+                            <li>First dance sung live, a big send off on the dance floor before the end of the night</li>
+                            <li>DJ’ing between live sets</li>
+                            <li>Full high quality lighting and sound system</li>
+                            <li>Arrival at least an hour before start time</li>
+                            <li>Price starts at £500 based on a wedding reception from 7:30pm till midnight, less if combined with another part of the day</li>
+                        </ul>
+                        <h5 class="small-quote p4"><em>“You entertained and pleased every age group. The young teenagers were dancing (never seen my daughter dance before!) and even my mum.”</em></h5>                  
+                        <h5 class="small-quote p4"><em>“I didn’t stop receiving compliments about you, you were amazing.”</em></h5>
+                      </div>
+                </div>            
+            </div>
+        </div>
+    </div>
+    
+</div>
+<div class="container">
+    <h2 class="text-center mt-3 heading-font" id="song-list">SONG LIST</h2>
+    <p class="lead my-2 text-center">I sing a LOT of songs...Here's an attempt to list the DANCEFLOOR FILLERS for the evening </p>
+    <div class="accordion my-3" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-center" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                NOUGHTIES
+              </button>
+            </h2>
+          </div>      
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+              <ul>
+                  {% for song in songs %}
+                    {% if song.genre == NOUGHTIES %}
+                    <li>{{ song.title }} - {{ song.artist }}</li>
+                    {% endif %}
+                  {% endfor %}
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                NINETIES
+              </button>
+            </h2>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+                <ul>
+                    {% for song in songs %}
+                      {% if song.genre == NINETIES %}
+                      <li>{{ song.title }} - {{ song.artist }}</li>
+                      {% endif %}
+                    {% endfor %}
+                </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                EIGHTIES
+              </button>
+            </h2>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+                <ul>
+                    {% for song in songs %}
+                      {% if song.genre == EIGHTIES %}
+                      <li>{{ song.title }} - {{ song.artist }}</li>
+                      {% endif %}
+                    {% endfor %}
+                </ul>
+            </div>
+          </div>
+          
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingFour">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-center" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  SEVENTIES
+                </button>
+              </h2>
+            </div>      
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+              <div class="card-body">
+                <ul>
+                    {% for song in songs %}
+                      {% if song.genre == SEVENTIES %}
+                      <li>{{ song.title }} - {{ song.artist }}</li>
+                      {% endif %}
+                    {% endfor %}
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingFive">
+              <h2 class="mb-0 text-center heading-font">
+                <button class="btn btn-link btn-block text-center" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  FIFTIES / SIXTIES
+                </button>
+              </h2>
+            </div>      
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+              <div class="card-body">
+                <ul>
+                    {% for song in songs %}
+                      {% if song.genre == SIXTIES %}
+                      <li>{{ song.title }} - {{ song.artist }}</li>
+                      {% endif %}
+                    {% endfor %}
+                </ul>
+              </div>
+            </div>
+          </div>          
+    </div>
+    <p class="lead">Here is a list of some of the songs I perform for ceremonies/drinks receptions/wedding breakfasts and pre-evening reception sets</p>
+    <div class="accordion my-3" id="accordion2">      
+        <div class="card">
+          <div class="card-header" id="headingSix">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-center" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                CEREMONIES / WEDDING BREAKFASTS
+              </button>
+            </h2>
+          </div>      
+          <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+            <div class="card-body">
+              <ul>
+                  {% for song in songs %}
+                    {% if song.playlist == CEREMONY %}
+                    <li>{{ song.title }} - {{ song.artist }}</li>
+                    {% endif %}
+                  {% endfor %}
+              </ul>
+            </div>
+          </div>
+        </div>
+  </div>
 </div>
 {% endblock %}
