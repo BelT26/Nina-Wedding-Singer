@@ -97,143 +97,16 @@
                             <li>Arrival at least an hour before start time</li>
                             <li>Price starts at £500 based on a wedding reception from 7:30pm till midnight, less if combined with another part of the day</li>
                         </ul>
-                        <h5 class="small-quote p4"><em>“You entertained and pleased every age group. The young teenagers were dancing (never seen my daughter dance before!) and even my mum.”</em></h5>                  
-                        <h5 class="small-quote p4"><em>“I didn’t stop receiving compliments about you, you were amazing.”</em></h5>
+                        <h5 class="small-quote p4 my-5 text-center"><em>“I didn’t stop receiving compliments about you, you were amazing.”</em></h5>                        
                       </div>
                 </div>            
             </div>
         </div>
     </div>
+  <div class="container">
+    <h3 class="small-quote p4 my-5 text-center"><em>“You entertained and pleased every age group. The young teenagers were dancing (never seen my daughter dance before!) and even my mum.”</em></h5>                  
+    <br/>
     
-</div>
-<div class="container">
-    <h2 class="text-center mt-3 heading-font" id="song-list">SONG LIST</h2>
-    <p class="lead my-2 text-center">I sing a LOT of songs...Here's an attempt to list the DANCEFLOOR FILLERS for the evening </p>
-    <div class="accordion my-3" id="accordionExample">
-        <div class="card">
-          <div class="card-header" id="headingOne">
-            <h2 class="mb-0">
-              <button class="btn btn-link btn-block text-center" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                NOUGHTIES
-              </button>
-            </h2>
-          </div>      
-          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-            <div class="card-body">
-              <ul>
-                  {% for song in songs %}
-                    {% if song.genre == NOUGHTIES %}
-                    <li>{{ song.title }} - {{ song.artist }}</li>
-                    {% endif %}
-                  {% endfor %}
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header" id="headingTwo">
-            <h2 class="mb-0">
-              <button class="btn btn-link btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                NINETIES
-              </button>
-            </h2>
-          </div>
-          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-            <div class="card-body">
-                <ul>
-                    {% for song in songs %}
-                      {% if song.genre == NINETIES %}
-                      <li>{{ song.title }} - {{ song.artist }}</li>
-                      {% endif %}
-                    {% endfor %}
-                </ul>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header" id="headingThree">
-            <h2 class="mb-0">
-              <button class="btn btn-link btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                EIGHTIES
-              </button>
-            </h2>
-          </div>
-          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-            <div class="card-body">
-                <ul>
-                    {% for song in songs %}
-                      {% if song.genre == EIGHTIES %}
-                      <li>{{ song.title }} - {{ song.artist }}</li>
-                      {% endif %}
-                    {% endfor %}
-                </ul>
-            </div>
-          </div>
-          
-        </div>
-        <div class="card">
-            <div class="card-header" id="headingFour">
-              <h2 class="mb-0">
-                <button class="btn btn-link btn-block text-center" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                  SEVENTIES
-                </button>
-              </h2>
-            </div>      
-            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-              <div class="card-body">
-                <ul>
-                    {% for song in songs %}
-                      {% if song.genre == SEVENTIES %}
-                      <li>{{ song.title }} - {{ song.artist }}</li>
-                      {% endif %}
-                    {% endfor %}
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-header" id="headingFive">
-              <h2 class="mb-0 text-center heading-font">
-                <button class="btn btn-link btn-block text-center" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                  FIFTIES / SIXTIES
-                </button>
-              </h2>
-            </div>      
-            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-              <div class="card-body">
-                <ul>
-                    {% for song in songs %}
-                      {% if song.genre == SIXTIES %}
-                      <li>{{ song.title }} - {{ song.artist }}</li>
-                      {% endif %}
-                    {% endfor %}
-                </ul>
-              </div>
-            </div>
-          </div>          
-    </div>
-    <p class="lead">Here is a list of some of the songs I perform for ceremonies/drinks receptions/wedding breakfasts and pre-evening reception sets</p>
-    <div class="accordion my-3" id="accordion2">      
-        <div class="card">
-          <div class="card-header" id="headingSix">
-            <h2 class="mb-0">
-              <button class="btn btn-link btn-block text-center" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                CEREMONIES / WEDDING BREAKFASTS
-              </button>
-            </h2>
-          </div>      
-          <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
-            <div class="card-body">
-              <ul>
-                  {% for song in songs %}
-                    {% if song.playlist == CEREMONY %}
-                    <li>{{ song.title }} - {{ song.artist }}</li>
-                    {% endif %}
-                  {% endfor %}
-              </ul>
-            </div>
-          </div>
-        </div>
-  </div>
+  </div>   
 </div>
 {% endblock %}

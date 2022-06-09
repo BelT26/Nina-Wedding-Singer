@@ -11,28 +11,23 @@ class Song(models.Model):
     EIGHTIES = '80'
     SEVENTIES = '70'
     SIXTIES = '60'
-    OTHER = 'OT'
-    EVENING = 'EV'
+    OTHER = 'OT'    
     CEREMONY = 'CE'
+   
 
-    GENRE_CHOICES = [
+    PLAYLIST_CHOICES = [
         (NOUGHTIES, '00s - 10s'),
         (NINETIES, '90s'),
         (EIGHTIES, '80s'),
         (SEVENTIES, '70s'),
-        (SIXTIES, '60s'),
-        (OTHER, 'Other')
-    ]
-
-    PLAYLIST_CHOICES = [
-       (CEREMONY, 'Ceremony'),
-       (EVENING, 'Evening')
+        (SIXTIES, '50s - 60s'),
+        (OTHER, 'Other') 
+        (CEREMONY, 'Ceremony'),
+       
     ]
 
     title = models.CharField(max_length=300, blank=False, null=False)
-    artist = models.CharField(max_length=300, blank=False, null=False)
-    genre = models.CharField(max_length=50, choices=GENRE_CHOICES,
-                             default=OTHER),
+    artist = models.CharField(max_length=300, blank=False, null=False)    
     playlist = models.CharField(max_length=50, choices=PLAYLIST_CHOICES,
                                 default=EVENING)
 
