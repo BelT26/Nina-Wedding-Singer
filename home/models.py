@@ -21,7 +21,7 @@ class Song(models.Model):
         (EIGHTIES, '80s'),
         (SEVENTIES, '70s'),
         (SIXTIES, '50s - 60s'),
-        (OTHER, 'Other') 
+        (OTHER, 'Other'), 
         (CEREMONY, 'Ceremony'),
        
     ]
@@ -29,7 +29,7 @@ class Song(models.Model):
     title = models.CharField(max_length=300, blank=False, null=False)
     artist = models.CharField(max_length=300, blank=False, null=False)    
     playlist = models.CharField(max_length=50, choices=PLAYLIST_CHOICES,
-                                default=EVENING)
+                                default=CEREMONY)
 
     def __str__(self):
         return f'{self.title}'
@@ -41,9 +41,7 @@ class Testimonial(models.Model):
     """
     title = models.CharField(max_length=300, blank=False, null=False)
     paragraph1 = models.TextField()
-    paragraph2 = models.TextField()
-    paragraph3 = models.TextField()
-    paragraph4 = models.TextField()
-    paragraph5 = models.TextField()
+    paragraph2 = models.TextField()    
     author = models.CharField(max_length=200, blank=True, null=True)
     date = models.CharField(max_length=100, blank=True, null=True)
+    location = models.CharField(max_length=300, blank=True, null=True)
