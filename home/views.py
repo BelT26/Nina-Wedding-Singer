@@ -44,6 +44,13 @@ def faqs(request):
     return render(request, 'home/faqs.html')
 
 
+def bio(request):
+    """
+    returns the home page
+    """
+    return render(request, 'home/bio.html')
+
+
 def contact(request):
     """
     returns a form for the user to contact Nina

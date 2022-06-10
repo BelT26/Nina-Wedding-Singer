@@ -14,7 +14,6 @@ class Song(models.Model):
     OTHER = 'OT'    
     CEREMONY = 'CE'
    
-
     PLAYLIST_CHOICES = [
         (NOUGHTIES, '00s - 10s'),
         (NINETIES, '90s'),

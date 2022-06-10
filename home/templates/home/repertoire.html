@@ -21,7 +21,7 @@
                     <div class="card-body">
                       <ul>
                           {% for song in songs %}
-                            {% if song.genre == NOUGHTIES %}
+                            {% if song.playlist == '00' %}
                             <li>{{ song.title }} - {{ song.artist }}</li>
                             {% endif %}
                           {% endfor %}
@@ -41,7 +41,7 @@
                     <div class="card-body">
                         <ul>
                             {% for song in songs %}
-                              {% if song.genre == NINETIES %}
+                              {% if song.playlist == '90' %}
                               <li>{{ song.title }} - {{ song.artist }}</li>
                               {% endif %}
                             {% endfor %}
@@ -61,7 +61,7 @@
                     <div class="card-body">
                         <ul>
                             {% for song in songs %}
-                              {% if song.genre == EIGHTIES %}
+                              {% if song.playlist == '80' %}
                               <li>{{ song.title }} - {{ song.artist }}</li>
                               {% endif %}
                             {% endfor %}
@@ -82,7 +82,7 @@
                       <div class="card-body">
                         <ul>
                             {% for song in songs %}
-                              {% if song.genre == SEVENTIES %}
+                              {% if song.playlist == '70' %}
                               <li>{{ song.title }} - {{ song.artist }}</li>
                               {% endif %}
                             {% endfor %}
@@ -102,7 +102,7 @@
                       <div class="card-body">
                         <ul>
                             {% for song in songs %}
-                              {% if song.genre == SIXTIES %}
+                              {% if song.playlist == '60' %}
                               <li>{{ song.title }} - {{ song.artist }}</li>
                               {% endif %}
                             {% endfor %}
@@ -131,7 +131,7 @@
             <div class="card-body">
               <ul>
                   {% for song in songs %}
-                    {% if song.playlist == CEREMONY %}
+                    {% if song.playlist == 'CE' %}
                     <li>{{ song.title }} - {{ song.artist }}</li>
                     {% endif %}
                   {% endfor %}
