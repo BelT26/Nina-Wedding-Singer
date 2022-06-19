@@ -6,7 +6,9 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-12 w-100">
-            <img src="{% static 'home/images/home_page_main.jpg' %}" alt="black and white photo of nina singing and playing guitar" id="home-page-hero-img">
+            <img src="{% static 'home/images/home_page_main.jpg' %}" alt="black and white photo of nina singing and playing guitar" id="home-page-hero-img" class="d-none d-lg-block">
+            <img src="{% static 'home/images/hero_img_cropped.jpg' %}" alt="black and white photo of nina singing and playing guitar" id="home-page-hero-img-cropped" class="d-none d-md-block d-lg-none">
+            <img src="{% static 'home/images/hero_img_slim.jpg' %}" alt="black and white photo of nina singing and playing guitar" id="home-page-hero-img-cropped" class="d-block d-md-none">
             <div id="main-header-container">
                 <h1 class="d-none d-lg-block hero-text text-uppercase">NINA WEDDING SINGER</h1>
                 <!-- <h3 class="d-none d-lg-block hero-text">For the ultimate soundtrack for your big day</h3> -->
@@ -18,7 +20,7 @@
 <div class="container">
     <div class="row">
         <div class="col">
-            <p class="lead">Hi, I’m Nina and I love music and weddings! Having a job where I get to bring two of my favourite things together is a joy and I would be delighted to help make your special day a time you’ll never forget, for all the right reasons!</p>
+            <p class="lead">"Hi, I’m Nina and I love music and weddings! Having a job where I get to bring two of my favourite things together is a joy and I would be delighted to help make your special day a time you’ll never forget, for all the right reasons!"</p>
             <p class="lead">Nina presents the perfect entertainment for your wedding or function - whether you'd like a filled dancefloor for your evening party, a moving and memorable ceremony or a toe tapping drinks reception, her fantastic vocals, years of experience and friendly professionalism will keep your guests dancing the night away... …or wiping a tear away in the aisle!</p>
             
         </div>
@@ -27,13 +29,42 @@
 <div class="container my-5">
     <div class="row">
         <div class="col-12 col-lg-6" id="home2-img">
-            <img src="{% static 'home/images/outdoors.jpeg' %}" alt="photo of Nina smiling outdours" id="home-page-img2">
+            <img src="{% static 'home/images/outdoors.jpeg' %}" alt="photo of Nina smiling outdours" id="home-page-img2">            
         </div>
         <div class="col-12 col-lg-6">
             <p>Nina is a successful session singer who has worked for Dannii Minogue, Ronan Keating and Girls Aloud among others. Her sound system and lighting are second to none, she has a fantastic voice and extensive repertoire and for a fraction of the price of a band and DJ, you can rest assured that your live music is in safe hands.</p>
             <p>Nina covers the whole of the south and south east area; Surrey, Kent, East and West Sussex, Hampshire, Berkshire, Bucks and beyond.  She has recently won a Wedding Industry Award for music and is the recommended supplier to several wonderful venues. Her equipment is PAT tested, she has public liability insurance and is a Musicians' Union member.</p>
             <h4 class="small-quote p-4"><em>“You sang our songs with such meaning, you brought life to them.  You helped make our day even more special.”</em></h4>
-        </div>
+        </div>    
     </div>
-</div>  
+</div>
+<div class="media-container">
+    <h1 class="main-heading heading-font text-center my-3 pt-3">MEDIA</h1>
+    <div class="row pb-5">
+        <div class="col-12 col-lg-6 p-5" id="soundcloud-container">
+            <div class="row d-flex ml-lg-5 d-flex justify-content-lg-between">
+                <div class="col-12 col-lg-6 py-2 px-5"><iframe width="100%" height="150" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/571030701&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/nina-singer" title="Nina Singer" target="_blank" style="color: #cccccc; text-decoration: none;">Nina Singer</a> · <a href="https://soundcloud.com/nina-singer/dancefloor-classics-1" title="Dancefloor Classics" target="_blank" style="color: #cccccc; text-decoration: none;">Dancefloor Classics</a></div></div>
+                <div class="col-12 col-lg-6 py-2 px-5">
+                    <iframe width="100%" height="150" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/568608306&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/nina-singer" title="Nina Singer" target="_blank" style="color: #cccccc; text-decoration: none;">Nina Singer</a> · <a href="https://soundcloud.com/nina-singer/ceremony-medley" title="Ceremony Medley" target="_blank" style="color: #cccccc; text-decoration: none;">Ceremony Medley</a></div>
+                </div>
+                <div class="col-12 col-lg-6 py-2 px-5">
+                    <iframe width="100%" height="150" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/568606965&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/nina-singer" title="Nina Singer" target="_blank" style="color: #cccccc; text-decoration: none;">Nina Singer</a> · <a href="https://soundcloud.com/nina-singer/bigballads" title="Bigballads" target="_blank" style="color: #cccccc; text-decoration: none;">Bigballads</a></div>
+                </div>        
+                <div class="col-12 col-lg-6 py-2 px-5">
+                    <iframe width="100%" height="150" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/568606257&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/nina-singer" title="Nina Singer" target="_blank" style="color: #cccccc; text-decoration: none;">Nina Singer</a> · <a href="https://soundcloud.com/nina-singer/new-demo" title="studio work snippets" target="_blank" style="color: #cccccc; text-decoration: none;">studio work snippets</a></div>
+                </div>
+                <div class="col-12 col-lg-5 py-2 pl-5 pr-2">
+                    <iframe width="100%" height="150" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/242322138&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/nina-singer" title="Nina Singer" target="_blank" style="color: #cccccc; text-decoration: none;">Nina Singer</a> · <a href="https://soundcloud.com/nina-singer/je-taime-a-mourir" title="Je L&#x27;aime A Mourir" target="_blank" style="color: #cccccc; text-decoration: none;">Je L&#x27;aime A Mourir</a></div>
+                </div>
+                <div class="col-12 col-lg-7 text-center my-auto py-2">
+                    <img src="{% static 'home/images/award1.jpg' %}" height="100px" class="pr-3">
+                    <img src="{% static 'home/images/award2.png' %}" height="100px"> 
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-lg-6 px-4 py-5 text-center">
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fninaweddingsinger%2F&tabs=timeline&width=480&height=550&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=566704894966504" width="480" height="550" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe> 
+        </div>
+    </div>    
+</div>
 {% endblock %}
