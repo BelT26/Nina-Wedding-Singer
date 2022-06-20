@@ -18,6 +18,11 @@ body {
     height: 6rem;    
 }
 
+.navbar-dark {
+    background-color:  rgb(73, 73, 100) !important;
+    color: rgb(220, 198, 125) !important;
+}
+
 .navbar h2,
 .navbar-toggler-icon,
 .navbar-toggler {
@@ -166,12 +171,20 @@ body {
         max-width: 600px !important;
         height: auto !important;
     }
+
+    .navbar h2 {
+        font-size: 1.8rem;
+    }
 }
 
 @media screen and (max-width: 500px) {
     .letter {
         width: 320px !important;
         height: auto !important;
+    }
+
+    .navbar h2 {
+        font-size: 1.5rem;
     }
 }
 
