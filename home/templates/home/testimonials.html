@@ -189,82 +189,16 @@
 </div>
 
 
-<!-- <div class="container quote-container">
-    <blockquote class="blockquote">
-        <p class="mb-0"></p>
-        <footer class="blockquote-footer"> <cite></cite></footer>
-    </blockquote>
-</div>
+{% for testimonial in testimonials %}
 <div class="container quote-container">
     <blockquote class="blockquote">
-        <p class="mb-0"></p>
-        <footer class="blockquote-footer"> <cite></cite></footer>
+        <p class="mb-0">{{ testimonial.paragraph1 }}</p>
+        {% if testimonial.paragraph2 %}
+        <p class="mb-0">{{ testimonial.paragraph2 }}</p>
+        {% endif %}
+        <footer class="blockquote-footer">{{ testimonial.author}} <cite>{{ testimonial.location }}, {{ testimonial.date }}</cite></footer>
     </blockquote>
 </div>
-<div class="container quote-container">
-    <blockquote class="blockquote">
-        <p class="mb-0"></p>
-        <footer class="blockquote-footer"> <cite></cite></footer>
-    </blockquote>
-</div>
-<div class="container quote-container">
-    <blockquote class="blockquote">
-        <p class="mb-0"></p>
-        <footer class="blockquote-footer"> <cite></cite></footer>
-    </blockquote>
-</div>
-<div class="container quote-container">
-    <blockquote class="blockquote">
-        <p class="mb-0"></p>
-        <footer class="blockquote-footer"> <cite></cite></footer>
-    </blockquote>
-</div>
-<div class="container quote-container">
-    <blockquote class="blockquote">
-        <p class="mb-0"></p>
-        <footer class="blockquote-footer"> <cite></cite></footer>
-    </blockquote>
-</div>
-<div class="container quote-container">
-    <blockquote class="blockquote">
-        <p class="mb-0"></p>
-        <footer class="blockquote-footer"> <cite></cite></footer>
-    </blockquote>
-</div>
-<div class="container quote-container">
-    <blockquote class="blockquote">
-        <p class="mb-0"></p>
-        <footer class="blockquote-footer"> <cite></cite></footer>
-    </blockquote>
-</div>
-<div class="container quote-container">
-    <blockquote class="blockquote">
-        <p class="mb-0"></p>
-        <footer class="blockquote-footer"> <cite></cite></footer>
-    </blockquote>
-</div>
-<div class="container quote-container">
-    <blockquote class="blockquote">
-        <p class="mb-0"></p>
-        <footer class="blockquote-footer"> <cite></cite></footer>
-    </blockquote>
-</div>
-<div class="container quote-container">
-    <blockquote class="blockquote">
-        <p class="mb-0"></p>
-        <footer class="blockquote-footer"> <cite></cite></footer>
-    </blockquote>
-</div>
-<div class="container quote-container">
-    <blockquote class="blockquote">
-        <p class="mb-0"></p>
-        <footer class="blockquote-footer"> <cite></cite></footer>
-    </blockquote>
-</div>
-<div class="container quote-container">
-    <blockquote class="blockquote">
-        <p class="mb-0"></p>
-        <footer class="blockquote-footer"> <cite></cite></footer>
-    </blockquote>
-</div> -->
+{% endfor %}
+
 {% endblock %}

@@ -11,7 +11,7 @@ class Song(models.Model):
     EIGHTIES = '80'
     SEVENTIES = '70'
     SIXTIES = '60'
-    OTHER = 'OT'    
+    OTHER = 'OT'
     CEREMONY = 'CE'
    
     PLAYLIST_CHOICES = [
@@ -20,9 +20,8 @@ class Song(models.Model):
         (EIGHTIES, '80s'),
         (SEVENTIES, '70s'),
         (SIXTIES, '50s - 60s'),
-        (OTHER, 'Other'), 
+        (OTHER, 'Other'),
         (CEREMONY, 'Ceremony'),
-       
     ]
 
     title = models.CharField(max_length=300, blank=False, null=False)
@@ -38,9 +37,8 @@ class Testimonial(models.Model):
     """
     A model used to add testimonials
     """
-    title = models.CharField(max_length=300, blank=False, null=False)
     paragraph1 = models.TextField()
-    paragraph2 = models.TextField()    
+    paragraph2 = models.TextField()
     author = models.CharField(max_length=200, blank=True, null=True)
     date = models.CharField(max_length=100, blank=True, null=True)
     location = models.CharField(max_length=300, blank=True, null=True)

@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, reverse
 from django.core.mail import send_mail, BadHeaderError
 from django.http import HttpResponse
-from .models import Song
+from .models import Song, Testimonial
 from .forms import ContactForm
 
 
@@ -34,7 +34,10 @@ def testimonials(request):
     """
     returns the home page
     """
-    return render(request, 'home/testimonials.html')
+    testimonial_list = Testimonial.objects.all()
+    return render(request, 'home/testimonials.html', {
+        'testimonials': testimonial_list
+    })
 
 
 def faqs(request):
@@ -77,9 +80,3 @@ def contact(request):
     form = ContactForm()
     return render(request, "home/contact.html", {'form': form})
 
-
-def add_song(request):
-    """
-    returns a form to add songs to the repertoire
-    """
-    return render(request, 'home/add_song.html')
