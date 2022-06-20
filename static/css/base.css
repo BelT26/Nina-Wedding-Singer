@@ -81,9 +81,13 @@ body {
 }
 
 
-
 #home-page-img2 {
     height: 400px;
+    margin: auto;
+}
+
+#home-page-img2-cropped {
+    width: 95vw;
     margin: auto;
 }
 
@@ -124,7 +128,7 @@ body {
 }
 
 .custom-button {
-    background-color: rgb(76, 73, 79);
+    background-color: rgb(73, 73, 100);
     color: rgb(220, 198, 125);
 }
 
@@ -138,4 +142,21 @@ body {
     .navbar {
         height: auto;
     }
+
+    .main-footer {
+        height: auto; 
+    }
+
+    .letter {
+        max-width: 600px !important;
+        height: auto !important;
+    }
 }
+
+@media screen and (max-width: 500px) {
+    .letter {
+        width: 320px !important;
+        height: auto !important;
+    }
+}
+

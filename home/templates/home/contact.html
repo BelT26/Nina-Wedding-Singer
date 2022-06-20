@@ -7,19 +7,22 @@
     <h1 class="heading-font main-heading text-center my-4">CONTACT ME</h1>
     <div class="row d-lg-flex justify-content-between">
         <div class="col-12 col-lg-7 mb-3" id="contact-form">
-            <form action="{% url 'contact' %}" method="POST" >
+            <form action="{% url 'contact' %}" method="POST" class="p-3">
                 {% csrf_token %}
                 {{form|crispy}}
-                <button type="submit" class="my-3 ml-2 btn custom-button">Submit</button>
+                <button type="submit" class="my-3 mx-auto btn custom-button">Submit</button>
             </form>
         </div>
-        <div class="col-12 col-lg-5">
-            <p>Phone: </p> 
-            <p>Email: </p>
-            <br>
+        <div class="col-12 col-lg-5 text-center">
+            <div class="text-center mb-4">
+                <img src="{% static 'home/images/nina_guitar.jpg' %}" width="320"/>
+            </div>
+            <p>Phone: 07956 256721</p> 
+            <p>Email: <a href="mailto:info@ninaweddingsinger.co.uk">info@ninaweddingsinger.co.uk</a></p>
+            <p>Facebook: <a href="https://www.facebook.com/ninaweddingsinger">https://www.facebook.com/ninaweddingsinger</a></p>
             <div class="d-flex justify-content-between">
-                <img src="{% static 'home/images/award1.jpg' %}" width="100" class="m-5">
-                <img src="{% static 'home/images/award2.png' %}" width="320" class="m-5"> 
+                <img src="{% static 'home/images/award1.jpg' %}" width="60" class="m-5">
+                <img src="{% static 'home/images/award2.png' %}" width="180" class="m-5"> 
             </div>
         </div>
     </div> 
