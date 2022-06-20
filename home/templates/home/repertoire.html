@@ -17,8 +17,8 @@
                       </button>
                     </h2>
                   </div>      
-                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                    <div class="card-body">
+                  <div id="collapseOne" class="collapse songs-title" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body songs-card">
                       <ul>
                           {% for song in songs %}
                             {% if song.playlist == '00' %}
@@ -117,8 +117,8 @@
         </div>
     </div>
     
-    <p class="lead mt-4">"Here is a list of some of the songs I perform for ceremonies/drinks receptions/wedding breakfasts and pre-evening reception sets"</p>
-    <div class="accordion my-3" id="accordion2">      
+    <p class="lead mt-5">"Here is a list of some of the songs I perform for ceremonies/drinks receptions/wedding breakfasts and pre-evening reception sets"</p>
+    <div class="accordion mt-3 mb-5" id="accordion2">      
         <div class="card">
           <div class="card-header" id="headingSix">
             <h2 class="mb-0">

@@ -8,6 +8,10 @@ body {
     font-size: 1.1rem;
 }
 
+.logo-font {
+    font-family: 'Varela Round', sans-serif;
+}
+
 .navbar {
     background-color:  rgb(73, 73, 100);
     color: rgb(220, 198, 125) !important;
@@ -69,8 +73,8 @@ body {
 
 #main-header-container {
     background-color: rgb(94, 94, 103);
-    opacity: 0.85; 
-    color: aliceblue;   
+    opacity: 0.95; 
+    color:rgb(218, 212, 193);  
     position: relative;
     top: -12rem;
     float:left;
@@ -78,6 +82,7 @@ body {
     margin-bottom: -4rem;
     padding: 1rem;
     z-index: 99;
+    box-shadow: 5px 10px #888888;
 }
 
 
@@ -134,6 +139,16 @@ body {
 
 .letter {
     height: 400px;
+}
+
+.card-header {
+    background-color: rgb(58, 58, 68) !important;
+}
+
+.card-header .btn-link {
+    color: rgb(220, 198, 125) !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
 }
 
 
