@@ -101,7 +101,7 @@ body {
 }
 
 #home-page-img2-cropped {
-    width: 95vw;
+    width: 85vw;
     margin: auto;
 }
 
@@ -162,11 +162,15 @@ body {
 
 
 /* media queries */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 992px) {
     .navbar {
         height: auto;
     }
 
+}
+
+
+@media screen and (max-width: 767px) {    
     .main-footer {
         height: auto; 
     }
@@ -189,6 +193,10 @@ body {
 
     .navbar h2 {
         font-size: 1.5rem;
+    }
+
+    #bio-pic img {
+        height: 280px !important;
     }
 }
 
