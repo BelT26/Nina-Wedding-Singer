@@ -63,8 +63,7 @@ def contact(request):
         if form.is_valid():
             subject = "Website Inquiry"
             body = {
-                'first_name': form.cleaned_data['first_name'],
-                'last_name': form.cleaned_data['last_name'],
+                'name': form.cleaned_data['name'],
                 'email': form.cleaned_data['email_address'],
                 'message': form.cleaned_data['message'],
                 }
