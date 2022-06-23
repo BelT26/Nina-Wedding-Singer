@@ -39,21 +39,7 @@
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="{% url 'services' %}">Packages</a>
-          </li>        
-          <!-- <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="{% url 'services' %}" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Packages
-            </a> -->
-            <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="{% anchor 'services' 'receptions' %}">Receptions</a>
-              <a class="dropdown-item" href="{% anchor 'services' 'ceremonies' %}">Ceremonies</a>
-              <a class="dropdown-item" href="{% anchor 'services' 'hen' %}">Hen Parties</a>
-              <a class="dropdown-item" href="{% anchor 'services' 'song' %}">Your Song</a>
-              <a class="dropdown-item" href="{% anchor 'services' 'audio' %}">Audio Recordings</a>
-              <a class="dropdown-item" href="{% anchor 'services' 'kids' %}">Kids' Entertainment</a>
-              <a class="dropdown-item" href="{% anchor 'services' 'djing' %}">DJing</a>
-            </div> -->
-          
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="{% url 'repertoire' %}">Song List</a>
           </li>
@@ -73,7 +59,14 @@
       </div>
     </nav>  
     {% if messages %}
-        <div class="message-container"></div>
+      {% for message in messages %}
+      <div class="alert {{ message.tags }} fade show" role="alert">
+        {{ message }}
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      {% endfor %}    
     {% endif %}
     {% block page_header %}
     {% endblock %}

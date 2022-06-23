@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect, reverse
 from django.core.mail import send_mail, BadHeaderError
 from django.http import HttpResponse
+from django.contrib import messages
 from .models import Song, Testimonial
 from .forms import ContactForm
 
@@ -72,8 +73,10 @@ def contact(request):
             try:
                 send_mail(subject, message, 'helen.taylor@hotmail.it',
                           ['helen.taylor@hotmail.it'])
+                messages.success(request, 'Your request has been successfully submitted')
             except BadHeaderError:
-                return HttpResponse('Invalid header found.')
+                messages.error(request, )
+                return HttpResponse('Please check your form for errors.')
             return redirect(reverse("home"))
 
     form = ContactForm()
