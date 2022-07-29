@@ -13,4 +13,9 @@ class SongAdmin(admin.ModelAdmin):
     ordering = ('title',)
 
 
-admin.site.register(Testimonial)
+@admin.register(Testimonial)
+class TestimonialAdmin(admin.ModelAdmin):
+    """determines how testimonials are displayed in the admin panel"""
+    list_display = ('author', 'date')
+
+    ordering = ('date',)
