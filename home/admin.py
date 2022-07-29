@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Song
+from .models import Song, Testimonial
 
 
 # Register your models here.
@@ -11,3 +11,6 @@ class SongAdmin(admin.ModelAdmin):
     search_fields = ['title', 'artist']
 
     ordering = ('title',)
+
+
+admin.site.register(Testimonial)
