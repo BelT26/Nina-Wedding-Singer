@@ -200,5 +200,9 @@ body {
     #bio-pic img {
         height: 280px !important;
     }
+
+    #party-pic {
+        height: 280px;
+    }
 }
 
