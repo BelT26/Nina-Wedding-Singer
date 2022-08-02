@@ -62,21 +62,18 @@ def contact(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
         if form.is_valid():
-            subject = "Website Inquiry"
-            body = {
-                'name': form.cleaned_data['name'],
-                'email': form.cleaned_data['email_address'],
-                'message': form.cleaned_data['message'],
-                }
-            message = "\n".join(body.values())
+            name = form.cleaned_data['name']
+            email = form.cleaned_data['email_address']
+            subject = f"Website Inquiry from {name}"
+            message = form.cleaned_data['message'],
 
             try:
-                send_mail(subject, message, 'helen.taylor@hotmail.it',
-                          ['helen.taylor@hotmail.it'])
+                send_mail(subject, message, email,
+                          ['helenjtaylor26@gmail.com'])
                 messages.success(request, 'Your request has been successfully submitted')
             except BadHeaderError:
-                messages.error(request, )
-                return HttpResponse('Please check your form for errors.')
+                messages.error(request, 'Please check your form for errors.')
+                return HttpResponse('Form error.')
             return redirect(reverse("home"))
 
     form = ContactForm()
