@@ -68,8 +68,7 @@ def contact(request):
             message = form.cleaned_data['message'],
 
             try:
-                send_mail(subject, message, email,
-                          ['helenjtaylor26@gmail.com'])
+                send_mail(subject, message, email, ['helenjtaylor26@gmail.com'])
                 messages.success(request, 'Your request has been successfully submitted')
             except BadHeaderError:
                 messages.error(request, 'Please check your form for errors.')
