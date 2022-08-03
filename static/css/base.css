@@ -69,6 +69,24 @@ body {
     padding-top: 20px;
 }
 
+.main-footer i:active,
+.main-footer i:hover {
+    font-size: 2.2rem;
+}
+
+#privacy-link,
+#footer-email a {
+    color: rgb(220, 198, 125) !important;
+}
+
+#footer-email a:active,
+#footer-email a:hover,
+#privacy-link:active,
+#privacy-link:hover {
+    font-weight: 500 !important;
+    text-decoration: none;
+}
+
 
 #home-page-hero-img,
 #home-page-hero-img-mobile,
