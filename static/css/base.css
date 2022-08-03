@@ -162,6 +162,10 @@ body {
     text-decoration: none !important;
 }
 
+#glitterball {
+    margin: 10px auto 0 !important;
+}
+
 
 /* media queries */
 @media screen and (max-width: 992px) {
@@ -185,6 +189,10 @@ body {
     .navbar h2 {
         font-size: 1.8rem;
     }
+
+    #bio2-text { 
+        padding: 0 30px;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -201,8 +209,8 @@ body {
         height: 280px !important;
     }
 
-    #party-pic {
-        height: 280px;
+    #reception-pic-mobile {
+        height: 370px !important;
     }
 }
 
